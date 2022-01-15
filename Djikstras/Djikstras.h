@@ -20,6 +20,7 @@ class Djikstras{
         Djikstras(map<string,map<int,string> graph, string start, string end){
             source = start;
             destination = end;
+            directedGraph = graph;
         }
         queue<string> computeShortestPath(){
             string current = source;
