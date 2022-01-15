@@ -3,7 +3,7 @@
 #include <map>
 #include <string>
 #include <list>
-#include <limmits>
+#include <limits>
 using namespace std;
 
 class Dijkstras{
@@ -45,7 +45,7 @@ class Dijkstras{
                return false;
         }
         string computeCheapestNode(map<int,string> graphcosts){
-            unsigned int nodeval =  numeric_limits<double>::infinity();
+            unsigned double nodeval =  numeric_limits<double>::infinity();
             int index;
             for(const auto& i [key,value]: graphcosts){
                 index += 1;
