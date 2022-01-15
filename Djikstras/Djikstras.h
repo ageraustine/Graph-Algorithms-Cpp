@@ -5,7 +5,7 @@
 #include <list>
 using namespace std;
 
-class Djikstras{
+class Dijkstras{
     private:
        map<string,map<int,string>>  directedGraph;
        map<string,list<string>> parents;
@@ -17,7 +17,7 @@ class Djikstras{
        string node; 
 
     public:
-        Djikstras(map<string,map<int,string> graph, string start, string end){
+        Dijkstras(map<string,map<int,string> graph, string start, string end){
             source = start;
             destination = end;
             directedGraph = graph;
